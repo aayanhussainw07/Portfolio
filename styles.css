@@ -2,6 +2,7 @@
     --text-color: #261600;
     --skill-color: #241400;
     --link-color: #5b3400;
+    --click-color: #b6884c;
     --background-color: #f5f4ef;
     --button-color: #f5f4ef;
 }
@@ -20,7 +21,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    max-width: 1480px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -142,9 +143,17 @@ nav .right a span {
     border: 2.5px solid var(--link-color);
 }
 
+.hero-section .text .bio-bullets {
+    font-size: 14px;
+    padding: 0 40px;
+    margin-bottom: 15px;
+}
+
 /* SECTION 2: Skills */
 .skills-section {
     background-color: var(--skill-color);
+    margin: auto auto;
+    width: auto;
     color: var(--background-color);
     text-align: center;
     padding: 50px 50px;
@@ -225,10 +234,7 @@ nav .right a span {
 }
 
 .projects-section .group img {
-    width: 200px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 5px;
+    box-shadow:0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 8px 8px rgba(0,0,0,0.11),0 16px 16px rgba(0,0,0,0.11),0 32px 32px rgba(0,0,0,0.11);
 }
 
 .projects-section .group p {
@@ -243,10 +249,60 @@ nav .right a span {
     object-fit: cover;
     border-radius: 10px;
     transition: .4s;
+    box-shadow:0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 8px 8px rgba(0,0,0,0.11),0 16px 16px rgba(0,0,0,0.11),0 32px 32px rgba(0,0,0,0.11);
 }
 
 .projects-section .group .left video {
   width: 600px;
+}
+
+.projects-section .group .knock img {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: .4s;
+}
+
+.projects-section .group .knock img:hover {
+  width: 850px;
+  height: 550px;
+}
+
+.projects-section .group .knocktext {
+    margin: 0px;
+}
+
+.projects-section .group .knocktext img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: .4s;
+  margin-bottom: 20px;
+}
+
+.projects-section .group .knocktext img:hover {
+  width: 420px;
+  height: 220px;
+}
+
+.projects-section .group .knocktext a {
+    color: var(--click-color);
+    text-decoration: underline;
+    transition: .1s;
+}
+
+.projects-section .group .knocktext a:hover {
+    opacity: 50%;
+}
+
+.projects-section .group .knocktext a span {
+    transition: .1s;
+}
+
+.projects-section .group .knocktext a span:hover {
+    font-size: 18px;
 }
 
 .projects-section .group .right video {
@@ -263,8 +319,7 @@ nav .right a span {
 
 /* SECTION 4: Contact */
 .contact-section {
-    padding: 0 50px;
-    margin-bottom: 100px;
+    padding: 50px 50px;
 }
 
 .contact-section h2 {
@@ -313,20 +368,16 @@ nav .right a span {
     filter: brightness(.9);
 }
 
-@media (max-width: 850px) {
-    /* SECTION 1: Hero */
-    .hero-section .text h2 {
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 780px) {
+@media (max-width: 1200px) {
     
     /* SECTION 1: Hero */
     .hero-section {
         flex-direction: column;
     }
-
+    
+    .hero-section .text h2 {
+        font-size: 35px;
+    }
     .hero-section .headshot img {
         width: 300px;
     }
@@ -343,6 +394,16 @@ nav .right a span {
 
     .projects-section .group .left video:hover {
         width: 300px;
+    }
+
+    .projects-section .group .knock img {
+        width: 450px;
+        height: 300px;
+    }
+
+    .projects-section .group .knock img:hover {
+        width: 450px;
+        height: 300px;
     }
 
     .projects-section .group .right video {
@@ -403,7 +464,18 @@ nav .right a span {
         font-size: 30px;
     }
 
-    /* SECTION 2: Skills */
+    .hero-section {
+        flex-direction: column;
+    }
+    
+    .hero-section .text h2 {
+        font-size: 35px;
+    }
+    .hero-section .headshot img {
+        width: 300px;
+    }
+
+     /* SECTION 2: Skills */
     .skills-section {
         padding: 50px 20px;
     }
@@ -417,9 +489,58 @@ nav .right a span {
         padding: 0 20px;
         padding-bottom: 50px;
     }
+    
+    .projects-section {
+        margin-top: -20px;
+        text-align: center;
+    }
+
+    .projects-section .group .left video {
+        width: 200px;
+    }
+
+    .projects-section .group .left video:hover {
+        width: 200px;
+    }
+
+    .projects-section .group .knock img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .projects-section .group .knock img:hover {
+        width: 300px;
+        height: 200px;
+    }
+
+    .projects-section .group .knocktext img {
+        width: 300px;
+        height: 180px;
+    }
+
+    .projects-section .group .knocktext img:hover {
+        width: 300px;
+        height: 180px;
+    }
+
+    .projects-section .group .right video {
+        width: 300px;
+    }
+
+    .projects-section .group .right video:hover {
+        width: 300px;
+    }
+
+    .projects-section .group {
+        flex-direction: column;
+    }
 
     /* SECTION 4: Contact */
     .contact-section {
         padding: 0 20px;
+    }
+    
+    .contact-section .group {
+        flex-direction: column;
     }
 }
