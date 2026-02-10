@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aayan Hussain | Software Dev</title>
+    <title>Aayan Hussain | Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -17,174 +17,164 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-    <nav>
-        <!-- NAVBAR -->
-        <div class="left">
-            <i class="fa-solid fa-face-smile"></i>
-        </div>
-
-        <div class="right">
-            <a href="https://github.com/aayanhussainw07" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-                <span>Github</span>
-            </a>
-
-            <a href="https://www.linkedin.com/in/aayanhussain07/" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>Linkedin</span>
-            </a>
-
-            <a href="mailto:aayanhussainw07@gmail.com" target="_blank" rel="noopener noreferrer">
-                <span>Get in touch</span>
-                <span class="Arrow">→</span>
-            </a>
+    <nav class="top-nav">
+        <div class="nav-shell">
+            <a class="brand-mark" href="#home">AYN</a>
+            <div class="nav-links">
+                <a href="#home">ME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
         </div>
     </nav>
 
     <main>
-        <!-- SECTION 1: Hero-->
-        <section class="hero-section">
-            <!-- Left Side -->
-            <div class="headshot">
-                <img src="images/hero-headshot.webp" alt="Aayan-Headshot">
-            </div>
+        <section id="home" class="hero">
+            <div class="hero-card">
+                <div class="avatar-wrap">
+                    <img src="images/hero-headshot.webp" alt="Aayan Hussain headshot">
+                </div>
+                <h1>aayan</h1>
+                <p class="subtitle">Let's get to it!</p>
 
-            <!-- Right Side -->
-            <div class="text">
-                <h2>Hi, I'm <span class="highlight">Aayan</span>. 👋</h2>
-                <p> I'm a Michigander turned New Yorker, and my goal is to build software which others gain joy from.
-                    Hope we're able to create together.
-                </p>
-
-                <ul class="bio-bullets">
-                    <li>CS @ Cornell University </li>
-                    <li>Knowledge of NLP & Machine Learning</li>
-                    <li>2.5 years w/ Lua on Roblox games</li>
-                    <li>Experience w/ Graphic Design & Video Editing</li>
-                </ul>
-
-                <div class="links">
-                    <a href="#skills">
-                        <i class="fa-solid fa-code"></i>
-                        <span>Technical Skills</span>
+                <div class="action-row">
+                    <a class="icon-btn" href="https://www.linkedin.com/in/aayanhussain07/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-
-                    <a href="#projects">
-                        <i class="fa-solid fa-pen"></i>
-                        <span>Projects & Works</span>
+                    <a class="icon-btn" href="https://github.com/aayanhussainw07" target="_blank"
+                        rel="noopener noreferrer" aria-label="Github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="icon-btn" href="mailto:aayanhussainw07@gmail.com" aria-label="Email">
+                        <i class="fa-regular fa-envelope"></i>
                     </a>
                 </div>
-
             </div>
         </section>
 
+        <section id="about" class="content-section about">
+            <div class="section-heading">about</div>
+            <div class="about-grid">
+                <div class="about-left">
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <img src="images/cornell-seal.svg" alt="Cornell University seal">
+                        </div>
+                        <div>
+                            <h3>Cornell University</h3>
+                            <p class="muted">Computer Science</p>
+                        </div>
+                    </div>
 
-        <!-- SECTION 2: Skills-->
-        <section id="skills" class="skills-section">
-            <h2>Technical Skills</h2>
-            <h3>What can I do?</h3>
-
-            <div class="cells">
-                <div class="cell">
-                    <img src="images/java-logo.webp" alt="java logo">
-                    <span>Java</span>
+                    <p class="lede">
+                        Lately, I've been tired of getting professional, so I'll be a bit casual! I love creating, and have been coding for over 3 years at this point.
+                    </p>
+                    <p class="lede">
+                        As of now, I'm trying to delve more into creating
+                        my own real websites and applications, and the area of artifical intelligence. I can't wait to see what's to come!
+                    </p>
                 </div>
 
-                <div class="cell">
-                    <img src="images/python-logo.webp" alt="python logo">
-                    <span>Python</span>
-                </div>
+                <div class="about-right">
+                    <div class="chip-group">
+                        <p class="chip-label">languages</p>
+                        <div class="chip-grid">
+                            <span class="chip"><i class="fa-brands fa-java"></i>java</span>
+                            <span class="chip"><i class="fa-brands fa-python"></i>python</span>
+                            <span class="chip"><i class="fa-solid fa-pen-nib"></i>lua</span>
+                            <span class="chip"><i class="fa-brands fa-html5"></i>html</span>
+                            <span class="chip"><i class="fa-brands fa-css3-alt"></i>css</span>
+                        </div>
+                    </div>
 
-                <div class="cell">
-                    <img src="images/lua-logo.webp" alt="lua logo">
-                    <span>Lua</span>
+                    <div class="chip-group">
+                        <p class="chip-label">technologies</p>
+                        <div class="chip-grid">
+                            <span class="chip"><i class="fa-solid fa-flask"></i>flask</span>
+                            <span class="chip"><i class="fa-solid fa-leaf"></i>django</span>
+                            <span class="chip"><i class="fa-brands fa-docker"></i>docker</span>
+                            <span class="chip"><i class="fa-solid fa-database"></i>sqlalchemy</span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="cell">
-                    <img src="images/canva-logo.webp" alt="canva logo">
-                    <span>Canva</span>
-                </div>
-
-                <div class="cell">
-                    <img src="images/resolve-logo.webp" alt="resolve logo">
-                    <span>Resolve</span>
-                </div>
-
             </div>
-
-            <h3>What am I learning?</h3>
-            <div class="cells">
-                <div class="cell">
-                    <img src="images/html-logo.webp" alt="html logo">
-                    <span>HTML</span>
-                </div>
-
-                <div class="cell">
-                    <img src="images/css-logo.webp" alt="css logo">
-                    <span>CSS</span>
-                </div>
-            </div>
-
         </section>
 
-        <!-- SECTION 3: Projects-->
-        <section id="projects" class="projects-section">
-            <h2>Projects & Works</h2>
-
-            <div class="groupList">
-                <div class="group">
-                    <div class="bigimage">
-                        <img src="images/knockback.webp" alt="Knockback">
-                        <p>Knockback: ALPHA v1.3</p>
-                        <p>Personal (8/2023 - Present)</p>
+        <section id="projects" class="content-section projects">
+            <div class="section-heading">projects</div>
+            <div class="project-grid">
+                <article class="project-card wide">
+                    <div class="media">
+                        <img src="images/knockback.webp" alt="Knockback gameplay">
                     </div>
-
-                    <div class="description">
-                        <img src="images/knockbackthumb.webp" alt="KnockbackThumbnail">
-
-                        <p> Knockback is a fast-paced Roblox fighting game built with Lua scripting in Roblox Studio,
-                            featuring multiple character classes, AI-scripted enemies, and dynamic boss battles. It
-                            combines power-ups, custom animations, interactive UI, and multiplayer mechanics to create
-                            an engaging, replayable experience.</p>
-
-                        <a href="https://www.roblox.com/games/15664778655/Knockback" target="_blank"
-                            rel="noopener noreferrer">
-                            <span><br>Click here to give the game a try!</span>
-                        </a>
-
+                    <div class="project-body">
+                        <p class="eyebrow">Personal · Aug 2023 – Present</p>
+                        <h3>Knockback</h3>
+                        <p class="description">
+                            Fast-paced Roblox fighting game with multiple classes, AI enemies, custom animations,
+                            multiplayer mechanics, and replayable boss battles.
+                        </p>
+                        <a class="text-link" href="https://www.roblox.com/games/15664778655/Knockback" target="_blank"
+                            rel="noopener noreferrer">Play on Roblox</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="group">
-                    <div class="left">
+                <article class="project-card">
+                    <div class="media">
                         <video autoplay muted loop playsinline>
                             <source src="videos/wolverinetvpromo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <p>Promotional Advertisement</p>
-                        <p>Bronx Science Key Club</p>
                     </div>
+                    <div class="project-body">
+                        <p class="eyebrow">Bronx Science Key Club</p>
+                        <h3>Promotional Advertisement</h3>
+                    </div>
+                </article>
 
-                    <div class="right">
+                <article class="project-card">
+                    <div class="media">
                         <video autoplay muted loop playsinline>
                             <source src="videos/toofast.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <p>'too fast' - mj apanay Lyrics</p>
-                        <p>Personal</p>
                     </div>
-                </div>
-
+                    <div class="project-body">
+                        <p class="eyebrow">Personal</p>
+                        <h3>'too fast' — mj apanay (lyrics edit)</h3>
+                    </div>
+                </article>
             </div>
-
         </section>
 
-
+        <section id="contact" class="content-section contact">
+            <div class="section-heading">contact</div>
+            <p class="lede">Open to collaborations, internships, and freelance work.</p>
+            <div class="cta-row">
+                <a class="primary-btn" href="mailto:aayanhussainw07@gmail.com">email me</a>
+                <a class="ghost-btn" href="https://www.linkedin.com/in/aayanhussain07/" target="_blank"
+                    rel="noopener noreferrer">linkedin</a>
+            </div>
+        </section>
     </main>
+    <script>
+        (function () {
+            const nav = document.querySelector('.top-nav');
+            if (!nav) return;
+
+            const onScroll = () => {
+                nav.classList.toggle('scrolled', window.scrollY > 8);
+            };
+
+            onScroll();
+            window.addEventListener('scroll', onScroll, { passive: true });
+        })();
+    </script>
 </body>
 
 </html>
