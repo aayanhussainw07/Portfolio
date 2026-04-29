@@ -27,6 +27,11 @@ html {
     scroll-behavior: smooth;
 }
 
+::selection {
+    color: var(--ink);
+    background: #ffe16f;
+}
+
 body {
     min-height: 100vh;
     font-family: 'Sora', 'Plus Jakarta Sans', sans-serif;
